@@ -1,0 +1,164 @@
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+......
+System
+======
+    Product Name: 
+    Product PartModel Number: 
+    Version: 0123456789
+    Serial Number: 
+    UUID: 00000000-0000-0000-0000-AC1F6B57398C
+
+Baseboard
+=========
+    Product Name: To be filled by O.E.M.
+    Version: 
+    Serial Number: 
+
+CPU
+===
+    [CPU(1)]
+            Family: Intel® Xeon® processor
+            Manufacturer: Intel
+            Version: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
+            Current Speed: 2100 MHz
+            Enabled Cores: 18
+            Total Cores: 18
+            CPU ID: f1 06 04 00 ff fb eb bf 
+    [CPU(2)]
+            Family: Intel® Xeon® processor
+            Manufacturer: Intel
+            Version: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
+            Current Speed: 2100 MHz
+            Enabled Cores: 18
+            Total Cores: 18
+            CPU ID: f1 06 04 00 ff fb eb bf 
+
+Memory
+======
+    [MEM(1)]
+             Locator: P1-DIMMA1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356679
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(2)] N/A
+    [MEM(3)] N/A
+    [MEM(4)]
+             Locator: P1-DIMMB1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356674
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(5)] N/A
+    [MEM(6)] N/A
+    [MEM(7)]
+             Locator: P1-DIMMC1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356678
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(8)] N/A
+    [MEM(9)] N/A
+    [MEM(10)]
+             Locator: P1-DIMMD1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356451
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(11)] N/A
+    [MEM(12)] N/A
+    [MEM(13)]
+             Locator: P2-DIMME1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356FDD
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(14)] N/A
+    [MEM(15)] N/A
+    [MEM(16)]
+             Locator: P2-DIMMF1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 393564F7
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(17)] N/A
+    [MEM(18)] N/A
+    [MEM(19)]
+             Locator: P2-DIMMG1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356627
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(20)] N/A
+    [MEM(21)] N/A
+    [MEM(22)]
+             Locator: P2-DIMMH1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356452
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(23)] N/A
+    [MEM(24)] N/A
+
+
+Add-on Network Interface
+========================
+    [NIC(1)]
+             Product Name: Supermicro Network Adapter
+             Serial Number: OA184S017262
+             Part Number: AOC-MH25G-m2S2TM
+
+             FW version: 010B
+
+             MAC Address1: AC1F6B57398C
+             Current Speed: N/A
+
+             MAC Address2: AC1F6B57398D
+             Current Speed: N/A
+
+             MAC Address3: AC1F6B5502C2
+             Current Speed: N/A
+
+             MAC Address4: AC1F6B5502C3
+             Current Speed: N/A
+
+             Slot Location: 4
+             Slot Type: Onboard
+
+
+System Network Interface
+====================================
+    [LAN(1)]
+             MAC Address: AC1F6B57398C
+             Current Speed: N/A
+    [LAN(2)]
+             MAC Address: AC1F6B57398D
+             Current Speed: N/A
+    [LAN(3)]
+             MAC Address: AC1F6B5502C2
+             Current Speed: N/A
+    [LAN(4)]
+             MAC Address: AC1F6B5502C3
+             Current Speed: N/A
+
+IPMI Network Interface
+====================================
+    [IPMI]
+             MAC Address: 0CC47A27FF1B

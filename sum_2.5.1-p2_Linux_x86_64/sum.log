@@ -1,0 +1,93 @@
+2021-02-05_16:02:42    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c QueryProductKey
+2021-02-05_16:03:15    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbiosinfo
+2021-02-05_16:04:04    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbmcinfo
+2021-02-05_16:04:24    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checkoobsupport
+2021-02-05_16:04:45    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checkassetinfo
+2021-02-05_16:05:12    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checksystemutilization
+2021-02-05_16:05:34    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checksensordata
+2021-02-05_16:05:54    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdmiinfo
+2021-02-05_16:06:34    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action l
+2021-02-05_16:06:37    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action l
+2021-02-05_16:06:42    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action help
+2021-02-05_16:06:53    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage
+2021-02-05_16:06:56    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage
+2021-02-05_16:07:03    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action 1
+2021-02-05_16:07:11    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action 2
+2021-02-05_16:07:16    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action 3
+2021-02-05_16:07:48    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --reboot  --action 3
+2021-02-05_16:09:32    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getkcspriv
+2021-02-05_16:11:34    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c geteventlog
+2021-02-05_16:13:59    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c cleareventlog
+2021-02-05_16:15:58    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c geteventlog
+2021-02-05_16:16:54    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getmainteneventlog --st 20210101 --et 20210205 --count 5
+2021-02-05_16:17:08    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getmainteneventlog
+2021-02-05_16:18:31    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getpsuinfo
+2021-02-05_16:33:33    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getpowerstatus
+2021-02-05_16:33:51    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 0
+2021-02-05_16:33:56    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 1
+2021-02-05_16:34:09    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 0
+2021-02-05_16:34:21    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction
+2021-02-05_16:34:33    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 2
+2021-02-05_16:34:57    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 3
+2021-02-05_16:35:11    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 3
+2021-02-05_16:35:27    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 4
+2021-02-05_16:36:46    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 5
+2021-02-05_16:38:30    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getraidcontrollerinfo
+2021-02-05_16:38:44    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getnvmeinfo
+2021-02-05_16:55:12    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getsatainfo
+2021-02-08_09:51:00    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbmccfg
+2021-02-08_09:52:11    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbmccfg
+2021-02-08_09:59:35    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg
+2021-02-08_09:59:47    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmc.cfg
+2021-02-08_10:04:34    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmc.cfg
+2021-02-08_10:10:15    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmc.cfg
+2021-02-08_10:24:28    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c loaddefaultbmccfg
+2021-02-08_10:24:41    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c loaddefaultbmccfg --preserve_user_cfg 
+2021-02-08_10:29:29    sccheah    ./sum -i 172.16.190.97:420 -u ***** -p ***** -c changebmccfg --file bmc.cfg
+2021-02-08_10:38:23    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmc.cfg
+2021-02-08_10:38:31    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmc.cfg.bin
+2021-02-08_10:46:56    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg
+2021-02-08_10:54:09    sccheah    ./sum -h  -c changebmccfg
+2021-02-08_10:54:20    sccheah    ./sum -h  -c getbmccfg
+2021-02-08_11:13:51    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg
+2021-02-08_11:15:06    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file bios.cfg
+2021-02-08_11:18:09    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-08_11:18:35    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg
+2021-02-08_11:18:50    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file bios.cfg --reboot 
+2021-02-08_11:21:48    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg --file bios.cfg
+2021-02-08_11:22:06    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file bios.cfg
+2021-02-08_11:28:52    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file bios.cfg
+2021-02-08_11:34:40    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c loaddefaultbioscfg --reboot 
+2021-02-08_11:40:00    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setbiospassword --new_password ***** --confirm_password ***** --reboot 
+2021-02-08_11:48:04    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c updatebios --file ../BIOS/NA2.1/X10DRTB7.710 --reboot 
+2021-02-08_14:11:59    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c updatebmc --file ../IPMI/NetApp_X10IPMI_325_REDFISH.bin
+2021-02-08_14:32:10    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c updatebmc --file ../IPMI/x10_bmc_6.95/SMT_X10IPMI_695_NetsApp.bin --overwrite_cfg  --overwrite_sdr 
+2021-02-08_14:43:15    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c updatebmc --file ../IPMI/x10_bmc_6.95/SMT_X10IPMI_695_NetsApp.bin --overwrite_cfg  --overwrite_sdr 
+2021-02-08_15:04:15    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c updatebmc --file ../IPMI/x10_bmc_6.95/SMT_X10IPMI_695_NetsApp.bin --overwrite_cfg  --overwrite_sdr 
+2021-02-08_15:40:05    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmc.cfg.bin
+2021-02-10_10:06:47    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-10_10:07:14    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-10_10:07:39    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-10_10:09:22    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checkassetinfo
+2021-02-10_10:10:12    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbiosinfo
+2021-02-10_10:16:46    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-10_10:38:37    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg
+2021-02-10_10:39:00    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-10_15:53:35    sccheah    ./sum -h  -c updatebios
+2021-02-10_16:14:06    sccheah    ./sum -h  -c biosrotmanage
+2021-02-11_15:26:13    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage
+2021-02-11_15:26:27    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c biosrotmanage --action 1
+2021-02-11_15:34:50    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction
+2021-02-11_15:53:49    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction
+2021-02-16_09:56:47    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c CheckAssetInfo
+2021-02-16_09:59:15    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-16_09:59:27    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-16_10:42:07    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction
+2021-02-16_10:42:21    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 0
+2021-02-16_17:30:48    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_11:53:25    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction
+2021-02-18_11:53:31    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 4
+2021-02-18_15:09:59    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction
+2021-02-18_15:10:05    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 5
+2021-02-18_15:10:18    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 5
+2021-02-18_15:11:12    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c setpoweraction --action 5

@@ -1,0 +1,750 @@
+[SUM - QueryProductKey]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+[0m
+SFT-OOB-LIC     [0m
+SFT-DCMS-SINGLE , invoice: none, creation date: 2021/02/05[0m
+Number of product keys: 2
+
+
+[SUM - GetBIOSInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+Managed system....................172.16.190.97
+    Board ID......................093E
+    BIOS build date...............2017/07/10
+
+
+[SUM - GetBmcInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+Managed system...........172.16.190.97
+    BMC type.............X10_ATEN
+    BMC version..........06.96.00
+    BMC ext. version.....00 00 00
+
+
+
+[SUM - CheckOOBSupport]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+[KEY]
+Node Product Key Format..........Non-JSON
+Node Product Key Activated.......SFT-DCMS-SINGLE
+Feature Toggled On...............Yes
+
+[BMC]
+BMC FW Version...................06.96.00
+BMC Supports OOB BIOS Config.....Yes
+BMC Supports OOB DMI Edit........Yes
+
+[BIOS]
+Board ID.........................093E
+BIOS Build Date..................2017/07/10
+BIOS Supports OOB BIOS Config....Yes
+BIOS Supports OOB DMI Edit.......Yes
+
+[SYSTEM]
+System Supports RoT Feature......No
+
+
+[SUM - CheckAssetInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+.....
+System
+======
+    Product Name: 
+    Product PartModel Number: 
+    Version: 0123456789
+    Serial Number: 
+    UUID: 00000000-0000-0000-0000-AC1F6B57398C
+
+Baseboard
+=========
+    Product Name: H300S
+    Version: 1.20
+    Serial Number: 1234567890
+
+CPU
+===
+    [CPU(1)]
+            Family: Intel® Xeon® processor
+            Manufacturer: Intel
+            Version: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
+            Current Speed: 2100 MHz
+            Enabled Cores: 18
+            Total Cores: 18
+            CPU ID: f1 06 04 00 ff fb eb bf 
+    [CPU(2)]
+            Family: Intel® Xeon® processor
+            Manufacturer: Intel
+            Version: Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
+            Current Speed: 2100 MHz
+            Enabled Cores: 18
+            Total Cores: 18
+            CPU ID: f1 06 04 00 ff fb eb bf 
+
+Memory
+======
+    [MEM(1)]
+             Locator: P1-DIMMA1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356679
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(2)] N/A
+    [MEM(3)] N/A
+    [MEM(4)]
+             Locator: P1-DIMMB1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356674
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(5)] N/A
+    [MEM(6)] N/A
+    [MEM(7)]
+             Locator: P1-DIMMC1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356678
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(8)] N/A
+    [MEM(9)] N/A
+    [MEM(10)]
+             Locator: P1-DIMMD1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356451
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(11)] N/A
+    [MEM(12)] N/A
+    [MEM(13)]
+             Locator: P2-DIMME1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356FDD
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(14)] N/A
+    [MEM(15)] N/A
+    [MEM(16)]
+             Locator: P2-DIMMF1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 393564F7
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(17)] N/A
+    [MEM(18)] N/A
+    [MEM(19)]
+             Locator: P2-DIMMG1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356627
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(20)] N/A
+    [MEM(21)] N/A
+    [MEM(22)]
+             Locator: P2-DIMMH1
+             Manufacturer: Samsung
+             Manufacturing Date (YY/WW): 18/18
+             Part Number: M393A4K40CB1-CRC   
+             Serial Number: 39356452
+             Size: 32768 MB
+             Current Speed: 2400 MHz
+    [MEM(23)] N/A
+    [MEM(24)] N/A
+
+
+Add-on Network Interface
+========================
+    [NIC(1)]
+             Product Name: Supermicro Network Adapter
+             Serial Number: OA184S017262
+             Part Number: AOC-MH25G-m2S2TM
+
+             FW version: 010B
+
+             MAC Address1: AC1F6B57398C
+             Current Speed: N/A
+
+             MAC Address2: AC1F6B57398D
+             Current Speed: N/A
+
+             MAC Address3: AC1F6B5502C2
+             Current Speed: N/A
+
+             MAC Address4: AC1F6B5502C3
+             Current Speed: N/A
+
+             Slot Location: 4
+             Slot Type: Onboard
+
+
+System Network Interface
+====================================
+    [LAN(1)]
+             MAC Address: AC1F6B57398C
+             Current Speed: N/A
+    [LAN(2)]
+             MAC Address: AC1F6B57398D
+             Current Speed: N/A
+    [LAN(3)]
+             MAC Address: AC1F6B5502C2
+             Current Speed: N/A
+    [LAN(4)]
+             MAC Address: AC1F6B5502C3
+             Current Speed: N/A
+
+IPMI Network Interface
+====================================
+    [IPMI]
+             MAC Address: 0CC47A27FF1B
+
+
+[SUM - CheckSystemUtilization]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+Time
+====
+    Last Sample Time: N/A
+
+OS
+==
+    OS Name: N/A
+    OS Version: N/A
+
+CPU
+===
+    CPU Utilization: N/A
+
+Memory
+======
+    Memory Utilization: N/A
+
+HDD
+===
+    N/A
+
+Network
+=======
+    Total Devices: N/A
+
+
+
+[SUM - CheckSensorData]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m[1m[1mStatus:[0m [0mGetting sensor data from BMC
+......[0m
+  Status | (#)Sensor                |      Reading | Low Limit | High Limit |
+  ------ | ---------                |      ------- | --------- | ---------- |
+  OK     | (4) CPU1 Temp            |      35C/95F |         0 |   98C/208F |
+  OK     | (71) CPU2 Temp           |      36C/97F |         0 |   98C/208F |
+  OK     | (138) PCH Temp           |     43C/109F |    5C/41F |   95C/203F |
+  OK     | (205) System Temp        |      26C/79F |   -4C/23F |   85C/185F |
+  OK     | (272) Peripheral Temp    |      25C/77F |   -4C/23F |   85C/185F |
+  OK     | (339) Inlet Temp         |      24C/75F |   -4C/23F |   85C/185F |
+  OK     | (406) Vcpu1VRM Temp      |      32C/90F |         0 |  100C/212F |
+  OK     | (473) Vcpu2VRM Temp      |      26C/79F |         0 |  100C/212F |
+  OK     | (540) VDIMMABVRM Temp    |     39C/102F |         0 |  100C/212F |
+  OK     | (607) VDIMMCDVRM Temp    |      36C/97F |         0 |  100C/212F |
+  OK     | (674) VDIMMEFVRM Temp    |      31C/88F |         0 |  100C/212F |
+  OK     | (741) VDIMMGHVRM Temp    |     39C/102F |         0 |  100C/212F |
+  OK     | (808) P1-DIMMA1 Temp     |      35C/95F |         0 |   85C/185F |
+         | (875) P1-DIMMA2 Temp     |          N/A |       N/A |        N/A |
+         | (942) P1-DIMMA3 Temp     |          N/A |       N/A |        N/A |
+  OK     | (1009) P1-DIMMB1 Temp    |      32C/90F |         0 |   85C/185F |
+         | (1076) P1-DIMMB2 Temp    |          N/A |       N/A |        N/A |
+         | (1143) P1-DIMMB3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (1210) P1-DIMMC1 Temp    |      29C/84F |         0 |   85C/185F |
+         | (1277) P1-DIMMC2 Temp    |          N/A |       N/A |        N/A |
+         | (1344) P1-DIMMC3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (1411) P1-DIMMD1 Temp    |      27C/81F |         0 |   85C/185F |
+         | (1478) P1-DIMMD2 Temp    |          N/A |       N/A |        N/A |
+         | (1545) P1-DIMMD3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (1612) P2-DIMME1 Temp    |      25C/77F |         0 |   85C/185F |
+         | (1679) P2-DIMME2 Temp    |          N/A |       N/A |        N/A |
+         | (1746) P2-DIMME3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (1813) P2-DIMMF1 Temp    |      25C/77F |         0 |   85C/185F |
+         | (1880) P2-DIMMF2 Temp    |          N/A |       N/A |        N/A |
+         | (1947) P2-DIMMF3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (2014) P2-DIMMG1 Temp    |      32C/90F |         0 |   85C/185F |
+         | (2081) P2-DIMMG2 Temp    |          N/A |       N/A |        N/A |
+         | (2148) P2-DIMMG3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (2215) P2-DIMMH1 Temp    |      29C/84F |         0 |   85C/185F |
+         | (2282) P2-DIMMH2 Temp    |          N/A |       N/A |        N/A |
+         | (2349) P2-DIMMH3 Temp    |          N/A |       N/A |        N/A |
+  OK     | (2416) M.2_ARTx Temp     |      35C/95F |         0 |   85C/185F |
+  OK     | (2483) FAN1              |     6000 RPM |   500 RPM |  25400 RPM |
+  OK     | (2550) FAN2              |     5900 RPM |   500 RPM |  25400 RPM |
+         | (2617) FAN3              |          N/A |       N/A |        N/A |
+         | (2684) FAN4              |          N/A |       N/A |        N/A |
+  OK     | (2751) 12V               |      12.06 V |   11.18 V |    13.26 V |
+  OK     | (2818) 5VCC              |       5.03 V |    4.30 V |     5.55 V |
+  OK     | (2885) 3.3VCC            |       3.30 V |    2.82 V |     3.66 V |
+  OK     | (2952) VBAT              |       3.22 V |    2.49 V |     3.60 V |
+  OK     | (3086) Vcpu2             |       1.80 V |    1.26 V |     2.09 V |
+  OK     | (3153) VDIMMAB           |       1.20 V |    0.98 V |     1.43 V |
+  OK     | (3220) VDIMMCD           |       1.20 V |    0.98 V |     1.43 V |
+  OK     | (3287) VDIMMEF           |       1.21 V |    0.98 V |     1.43 V |
+  OK     | (3354) VDIMMGH           |       1.20 V |    0.98 V |     1.43 V |
+  OK     | (3421) 12VSB             |      11.81 V |   10.30 V |    13.26 V |
+  OK     | (3488) 5VSB              |       5.18 V |    4.30 V |     5.55 V |
+  OK     | (3555) 3.3VSB            |       3.18 V |    2.82 V |     3.66 V |
+  OK     | (3622) 1.5V PCH          |       1.52 V |    1.35 V |     1.67 V |
+  OK     | (3689) 1.2V BMC          |       1.21 V |    1.05 V |     1.37 V |
+  OK     | (3756) 1.05V PCH         |       1.06 V |    0.90 V |     1.22 V |
+  OK     | (4292) PW Consumption    |    102 Watts |       N/A |        N/A |
+  OK     | (4359) PS1 Status        |         Presence detected | N/A | N/A |
+  OK     | (4426) PS2 Status        |         Presence detected | N/A | N/A |
+  OK     | (4493) AOC_NIC1_Temp     |     45C/113F |         0 |  100C/212F |
+         | (4560) NVMe1_SSD Temp    |          N/A |       N/A |        N/A |
+
+
+
+
+[SUM - GetDmiInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+// Supermicro Update Manager 2.5.1-p2 (2021/01/15)
+// File generated at 2021-02-18_15:16:46
+// Usage notes:
+// Please refer to SUM User's guide 'Format of the DMI information Text File' for more details.
+//
+// Notice for item value editing:
+// 1. Use quotation pair " " to edit string-valued items
+//    Example: ""Supermicro"" => "Supermicro"
+// 2. Use $DEFAULT$ signature without quotation pair to load default string for 
+//    string-valued items
+//    Example: $DEFAULT$ => Default string value
+// 3. Do not use quotation pair for non-string-valued items
+// 4. You can remove unnecessary DMI items so that its value will not be
+//    changed after an update.
+//    Ex:
+//    [BIOS Information]
+//		Version ...
+//		Build Date ...
+//
+//		You can remove Build Date but need to keep [BIOS Information]	
+
+Version                          = 0001                     // 2-byte hex value. Do not remove this line
+
+
+
+[BIOS Information]
+Version                {BIVS}    = "NA2.1"                  // string value
+Build Date             {BIBD}    = "07/10/2017"             // string value
+
+
+
+[System]
+Manufacturer           {SYMF}    = "Supermicro"             // string value
+Product                {SYPD}    = "Super Server"           // string value
+Version                {SYVS}    = "0123456789"             // string value
+Serial Number          {SYSN}    = "0123456789"             // string value
+UUID                   {SYUU}    = 00000000-0000-0000-0000-AC1F6B57398C // 4-2-2-2-6 formatted 16-byte hex values
+    // Bytes[ 0-3 ]: The low field of the timestamp
+    // Bytes[ 4-5 ]: The middle field of the timestamp
+    // Bytes[ 6-7 ]: The high field of the timestamp (multiplexed with
+    //               the version number)
+    // Bytes[ 8-9 ]: The clock sequence (multiplexed with the variant)
+    // Bytes[10-15]: The spatially unique node identifier
+    // Byte Order  :
+    //       UUID {00112233-4455-6677-8899-AABBCCDDEEFF} is stored as
+    //       33 22 11 00 55 44 77 66 88 99 AA BB CC DD EE FF
+SKU Number             {SYKN}    = "Default string"         // string value
+Family                 {SYFM}    = "Default string"         // string value
+
+
+
+[Base Board]
+Manufacturer           {BBMF}    = "Supermicro"             // string value
+Product                {BBPD}    = "H300S"                  // string value
+Version                {BBVS}    = "1.20"                   // string value
+Serial Number          {BBSN}    = "1234567890"             // string value
+Asset Tag              {BBAT}    = "Default string"         // string value
+
+
+
+[Chassis]
+Manufacturer           {CHMF}    = "Supermicro"             // string value
+Type                   {CHTY}    = 11                       // 1-byte hex value
+    // Value  : 01h ~ 1Dh
+    //     01h: Other; 02h: Unknown; 03h: Desktop;
+    //     04h: Low Profile Desktop; 05h: Pizza Box; 06h: Mini Tower;
+    //     07h: Tower; 08h: Portable; 09h: Laptop; 0Ah: Notebook;
+    //     0Bh: Hand Held; 0Ch: Docking Station; 0Dh: All in One;
+    //     0Eh: Sub Notebook; 0Fh: Space-saving; 10h: Lunch Box;
+    //     11h: Main Server Chassis; 12h: Expansion Chassis;
+    //     13h: SubChassis; 14h: Bus Expansion Chassis;
+    //     15h: Peripheral Chassis; 16h: RAID Chassis;
+    //     17h: Rack Mount Chassis; 18h: Sealed-case PC;
+    //     19h: Multi-system chassis; 1Ah: Compact PCI;
+    //     1Bh: Advanced TCA; 1Ch: Blade; 1Dh: Blade Enclosure;
+    //     1Fh: Convertible; 20h: Detachable;
+    //     21h: IoT Gateway; 22h: Embedded PC;
+    //     23h: Mini PC; 24h: Stick PC;
+Version                {CHVS}    = "0123456789"             // string value
+Serial Number          {CHSN}    = "0123456789"             // string value
+Tag Number             {CHTN}    = "Default string"         // string value
+OEM-Defined Value      {CHOD}    = 00000000                 // 4-byte hex value
+
+
+
+[OEM String]
+OEM String 1           {OES1}    = "Intel Haswell/Wellsburg/Grantley" // string value
+OEM string 2           {OES2}    = "Supermicro motherboard-X10 Series" // string value
+
+
+
+[System Power Supply (1)]
+Unit Group             {PS(1)UG} = 01                       // 1-byte hex value
+    //     Power unit group to which this power supply is associated.
+    // Specifying the same Power Unit Group value for more than one
+    // System Power Supply structure indicates a redundant power supply
+    // configuration. The field's value is 00h if the power supply is
+    // not a member of a redundant power unit. Non-zero values imply
+    // redundancy and that at least one other power supply will be
+    // enumerated with the same value.
+Location               {PS(1)LC} = "PSU1"                   // string value
+Device Name            {PS(1)DN} = "PWS-2K22A-1R"           // string value
+Manufacturer           {PS(1)MF} = "SUPERMICRO"             // string value
+Serial Number          {PS(1)SN} = "P2K22CH52JT1740"        // string value
+Asset Tag Number       {PS(1)TN} = "N/A"                    // string value
+Model Part Number      {PS(1)PT} = "PWS-2K22A-1R"           // string value
+Revision Level         {PS(1)RL} = "1.3"                    // string value
+Max Power Capacity     {PS(1)MC} = 0898                     // 2-byte hex value
+    // Maximum sustained power output in Watts Set to 0x8000 if unknown.
+Characteristics        {PS(1)CR} = 11A3                     // 2-byte hex value
+    // Bits[15-14]: Reserved, set to 00b;
+    // Bits[13-10]: DMTF Power Supply Type;
+    //              0001b: Other; 0010b: Unknown; 0011b: Linear;
+    //              0100b: Switching; 0101b: Battery; 0110b: UPS;
+    //              0111b: Converter; 1000b: Regulator; 
+    // Bits[ 9-7 ]: Status;
+    //              001b: Other; 010b: Unknown; 011b: OK;
+    //              100b: Non-critical;
+    //              101b: Critical (power supply has failed;
+    //                    and has been taken off-line.);
+    // Bits[ 6-3 ]: DMTF Input Voltage Range Switching;
+    //              0001b: Other; 0010b: Unknown; 0011b: Manual;
+    //              0100b: Auto-switch; 0101b: Wide range;
+    //              0110b: Not applicable;
+    // Bits[  2  ]: 1b power supply is unplugged from the wall;
+    // Bits[  1  ]: 1b power supply is present;
+    // Bits[  0  ]: 1b power supply is hot-replaceable;
+Input Voltage Probe Handle {PS(1)IV}= FFFF                  // 2-byte hex value
+    // Handle, or instance number, of a voltage probe (Type 26)
+    // monitoring this power supply's input voltage A value of 0xFFFF
+    // indicates that no probe is provided.
+Cooling Device Handle  {PS(1)CD} = FFFF                     // 2-byte hex value
+    // Handle, or instance number, of a cooling device (Type 27)
+    // associated with this power supply A value of 0xFFFF indicates
+    // that no cooling device is provided.
+Input Current Probe Handle {PS(1)IC}= FFFF                  // 2-byte hex value
+    // Handle, or instance number, of the electrical current probe (Type
+    // 29) monitoring this power supply's input current A value of
+    // 0xFFFF indicates that no current probe is provided.
+
+
+
+[System Power Supply (2)]
+Unit Group             {PS(2)UG} = 02                       // 1-byte hex value
+    //     Power unit group to which this power supply is associated.
+    // Specifying the same Power Unit Group value for more than one
+    // System Power Supply structure indicates a redundant power supply
+    // configuration. The field's value is 00h if the power supply is
+    // not a member of a redundant power unit. Non-zero values imply
+    // redundancy and that at least one other power supply will be
+    // enumerated with the same value.
+Location               {PS(2)LC} = "PSU2"                   // string value
+Device Name            {PS(2)DN} = "PWS-2K22A-1R"           // string value
+Manufacturer           {PS(2)MF} = "SUPERMICRO"             // string value
+Serial Number          {PS(2)SN} = "P2K23CK49AB0701"        // string value
+Asset Tag Number       {PS(2)TN} = "N/A"                    // string value
+Model Part Number      {PS(2)PT} = "PWS-2K22A-1R"           // string value
+Revision Level         {PS(2)RL} = "2.0"                    // string value
+Max Power Capacity     {PS(2)MC} = 0898                     // 2-byte hex value
+    // Maximum sustained power output in Watts Set to 0x8000 if unknown.
+Characteristics        {PS(2)CR} = 11A3                     // 2-byte hex value
+    // Bits[15-14]: Reserved, set to 00b;
+    // Bits[13-10]: DMTF Power Supply Type;
+    //              0001b: Other; 0010b: Unknown; 0011b: Linear;
+    //              0100b: Switching; 0101b: Battery; 0110b: UPS;
+    //              0111b: Converter; 1000b: Regulator; 
+    // Bits[ 9-7 ]: Status;
+    //              001b: Other; 010b: Unknown; 011b: OK;
+    //              100b: Non-critical;
+    //              101b: Critical (power supply has failed;
+    //                    and has been taken off-line.);
+    // Bits[ 6-3 ]: DMTF Input Voltage Range Switching;
+    //              0001b: Other; 0010b: Unknown; 0011b: Manual;
+    //              0100b: Auto-switch; 0101b: Wide range;
+    //              0110b: Not applicable;
+    // Bits[  2  ]: 1b power supply is unplugged from the wall;
+    // Bits[  1  ]: 1b power supply is present;
+    // Bits[  0  ]: 1b power supply is hot-replaceable;
+Input Voltage Probe Handle {PS(2)IV}= FFFF                  // 2-byte hex value
+    // Handle, or instance number, of a voltage probe (Type 26)
+    // monitoring this power supply's input voltage A value of 0xFFFF
+    // indicates that no probe is provided.
+Cooling Device Handle  {PS(2)CD} = FFFF                     // 2-byte hex value
+    // Handle, or instance number, of a cooling device (Type 27)
+    // associated with this power supply A value of 0xFFFF indicates
+    // that no cooling device is provided.
+Input Current Probe Handle {PS(2)IC}= FFFF                  // 2-byte hex value
+    // Handle, or instance number, of the electrical current probe (Type
+    // 29) monitoring this power supply's input current A value of
+    // 0xFFFF indicates that no current probe is provided.
+
+
+[SUM - GetKcsPriv]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+Managed system................172.16.190.97
+    KCS Privilege Level.......4 (Administrator)
+
+
+[SUM - GetEventLog]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+....[0m
+Event:1 Time:02/18/2021 15:14:32 Type:OOB Event
+  Assertion: #0xFF (OOB Event)| Event = Activate BIOS Product Key
+
+
+
+[SUM - ClearEventLog]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+[1m[1mStatus:[0m [0mClearing event log in BMC
+[0m
+[1m[1mStatus:[0m [0mPreparing to clear event log in BIOS
+......[0m
+[0m[1m[1m[1mStatus:[0m[0m [0mEvent log in BIOS is cleared for 172.16.190.97
+
+[0m[1m[1m[1mNote:[0m[0m [0mYou have to reboot or power up the system to effectively clear event log in BIOS
+
+
+
+[SUM - GetEventLog]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+.....[0mSEL empty
+
+
+
+[SUM - GetPsuInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+.......
+[Module 1](SlaveAddress = 0x78)
+    PWS Module Number: PWS-2K22A-1R
+    PWS Serial Number: P2K22CH52JT1740
+    PWS Module Revision: REV1.3
+    PMBus Revision: 0x22
+    Status: [STATUS OK](00h)
+    AC Input Voltage: 207.25 V
+    AC Input Current: 1.72 A
+    DC 12V Output Voltage: 12.20 V
+    DC 12V Output Current: 27.12 A
+    Temperature 1: 39 C
+    Temperature 2: 42 C
+    Fan 1: 2752 RPM
+    Fan 2: 3392 RPM
+    DC 12V Output Power: 331 W
+    AC Input Power: 355 W
+
+[Module 2](SlaveAddress = 0x7A)
+    PWS Module Number: PWS-2K22A-1R
+    PWS Serial Number: P2K23CK49AB0701
+    PWS Module Revision: REV2.0
+    PMBus Revision: 0x22
+    Status: [STATUS OK](00h)
+    AC Input Voltage: 207.25 V
+    AC Input Current: 1.57 A
+    DC 12V Output Voltage: 12.20 V
+    DC 12V Output Current: 24.59 A
+    Temperature 1: 40 C
+    Temperature 2: 40 C
+    Fan 1: 2784 RPM
+    Fan 2: 3424 RPM
+    DC 12V Output Power: 300 W
+    AC Input Power: 319 W
+
+
+
+[SUM - GetPowerStatus]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+Managed system................172.16.190.97
+    Power status..............On
+
+
+[SUM - GetRaidControllerInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+
+[0m
+********************************[0;31m[0;31m<<<<<ERROR>>>>>[0m[0m*********************************
+
+ExitCode                = 36
+Description             = Required device does not exist
+Program Error Code      = 289.25
+Error message:
+        There is no RAID controller detected on motherboard.
+
+***************************************[0m*[0m****************************************
+
+
+
+
+[SUM - GetNvmeInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+NVMe Device information
+=======================
+
+    [NVMe Controller(1)]
+         N/A
+
+
+[SUM - GetSataInfo]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+..................................................
+..................................................
+.........................................
+SATA HDD Information
+====================
+    N/A
+
+
+[SUM - GetMaintenEventLog]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Event 1: 2021/02/18 15:16:54
+ Description: Health event logs and configurations were reset default successfully.
+ Source: RMCP ADMIN 172.16.210.111
+
+Event 2: 2021/02/18 15:15:59
+ Description: Fan mode was configured to PUE2 successfully.
+ Source: RMCP ADMIN 172.16.210.111
+
+Event 3: 2021/02/18 15:15:43
+ Description: Fan mode was configured to HeavyIO successfully.
+ Source: RMCP ADMIN 172.16.210.111
+
+Event 4: 2021/02/18 15:15:21
+ Description: Fan mode was configured to Full Speed successfully.
+ Source: RMCP ADMIN 172.16.210.111
+
+Event 5: 2021/02/18 15:15:02
+ Description: Fan mode was configured to Standard successfully.
+ Source: RMCP ADMIN 172.16.210.111
+
+
+
+[SUM - BiosRotManage]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+********************************[0;31m[0;31m<<<<<ERROR>>>>>[0m[0m*********************************
+
+ExitCode                = 38
+Description             = Function is not supported
+Program Error Code      = 496.4
+Error message:
+        BiosRotManage command does not support on this platform.
+
+***************************************[0m*[0m****************************************
+
+
+
+
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+********************************[0;31m[0;31m<<<<<ERROR>>>>>[0m[0m*********************************
+
+ExitCode                = 38
+Description             = Function is not supported
+Program Error Code      = 495.4
+Error message:
+        BmcRotManage command does not support on this platform.
+
+***************************************[0m*[0m****************************************
+
+
+
+
+[SUM - SetPowerAction - DOWN]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Going to power down the managed system.
+SUCCESS - system is off
+
+
+[SUM - SetPowerAction - UP]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Going to power up the managed system.
+SUCCESS - system is on
+
+
+[SUM - SetPowerAction - SOFTSHUTDOWN]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Going to soft shutdown the managed system.
+SUCCESS - system is off
+
+
+[SUM] May want to check CYCLE, RESET, and REBOOT manually. There is no good way to programmatically confirm success on these commands.
+[SUM - SetPowerAction - REBOOT]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Going to reboot the managed system.
+
+
+[SUM - SetPowerAction - CYCLE]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Going to power cycle the managed system.
+
+
+[SUM - SetPowerAction - RESET]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+[0m
+Going to hard reset the managed system.
+
+

@@ -1,0 +1,58 @@
+2021-02-18_14:24:20    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_14:24:26    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_14:24:32    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_14:24:42    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c QueryProductKey
+2021-02-18_14:24:44    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetBIOSInfo
+2021-02-18_14:24:45    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetBmcInfo
+2021-02-18_14:24:46    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckOOBSupport
+2021-02-18_14:24:48    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckAssetInfo
+2021-02-18_14:24:54    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckSystemUtilization
+2021-02-18_14:24:56    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckSensorData
+2021-02-18_14:25:02    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetDmiInfo
+2021-02-18_14:25:06    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetKcsPriv
+2021-02-18_14:25:07    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetEventLog
+2021-02-18_14:25:12    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c ClearEventLog
+2021-02-18_14:25:18    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetEventLog
+2021-02-18_14:25:24    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetPsuInfo
+2021-02-18_14:25:34    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetPowerStatus
+2021-02-18_14:25:34    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetRaidControllerInfo
+2021-02-18_14:25:35    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetNvmeInfo
+2021-02-18_14:25:37    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetSataInfo
+2021-02-18_14:28:10    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetMaintenEventLog --st 20210213 --et 20210218 --count 5
+2021-02-18_14:28:14    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c BiosRotManage --action 1
+2021-02-18_14:28:15    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c BmcRotManage --action 1
+2021-02-18_14:28:47    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 1
+2021-02-18_14:29:17    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 0
+2021-02-18_14:37:48    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 4
+2021-02-18_14:38:48    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 2
+2021-02-18_14:39:18    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 3
+2021-02-18_14:39:48    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 5
+2021-02-18_15:16:00    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_15:16:06    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_15:16:12    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-18_15:16:22    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c QueryProductKey
+2021-02-18_15:16:23    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetBIOSInfo
+2021-02-18_15:16:25    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetBmcInfo
+2021-02-18_15:16:26    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckOOBSupport
+2021-02-18_15:16:28    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckAssetInfo
+2021-02-18_15:16:34    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckSystemUtilization
+2021-02-18_15:16:36    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c CheckSensorData
+2021-02-18_15:16:43    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetDmiInfo
+2021-02-18_15:16:47    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetKcsPriv
+2021-02-18_15:16:47    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetEventLog
+2021-02-18_15:16:52    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c ClearEventLog
+2021-02-18_15:16:59    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetEventLog
+2021-02-18_15:17:06    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetPsuInfo
+2021-02-18_15:17:15    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetPowerStatus
+2021-02-18_15:17:15    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetRaidControllerInfo
+2021-02-18_15:17:17    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetNvmeInfo
+2021-02-18_15:17:19    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetSataInfo
+2021-02-18_15:19:42    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetMaintenEventLog --st 20210213 --et 20210218 --count 5
+2021-02-18_15:19:46    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c BiosRotManage --action 1
+2021-02-18_15:19:48    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c BmcRotManage --action 1
+2021-02-18_15:19:50    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 1
+2021-02-18_15:20:20    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 0
+2021-02-18_15:28:51    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 4
+2021-02-18_15:37:51    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 5
+2021-02-18_15:39:08    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 2
+2021-02-18_15:39:38    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c SetPowerAction --action 3

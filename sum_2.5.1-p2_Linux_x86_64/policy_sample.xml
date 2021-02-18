@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<FirmwareUpdatePolicy>
+    <GeneralPolicy>
+        <BIOS Policy="Update">
+        <!-- Define general policy for UpdateBIOS command -->
+        <!-- Firmware matching: match by BoardID and CustomerID -->
+        <!-- Supported Policies: Ignore/Update/ReUpdate/OneFile -->
+        <!--     Ignore      : Do not update -->
+        <!--     Update      : Update to the latest in Folder -->
+        <!--     Reupdate    : Update to the same BIOS -->
+        <!--     OneFile     : Update to one specified BIOS file -->
+            <Folder> Change this to a valid BIOS folder path. </Folder>
+            <!-- For "Update/Reupdate" Policy -->
+            <File> Change this to a valid BIOS file path. </File>
+            <!-- For "OneFile" Policy -->
+        </BIOS>
+    </GeneralPolicy>
+
+    <GroupPolicy>
+        <Group ID="1">
+            <GroupKey>
+    	    <!-- Group keys to define a group -->
+            <!-- Supported key: BoardID/CustomerID/BoardProduct/SystemProduct -->
+            <!-- Empty value: Skip the key if no value is assigned. -->
+            <!-- Key combine: Use AND operator to combine multiple keys. -->
+                <BoardID>Valid Board ID</BoardID>
+                <!-- BoardID from GetBiosInfo command -->
+                <CustomerID></CustomerID>
+                <!-- OEM customer ID in DMI type 11 for OEM BIOS -->
+                <BoardProduct></BoardProduct>
+                <!-- Base board product name in DMI type 2 -->
+                <SystemProduct></SystemProduct>
+                <!-- System product name in DMI type 1 -->
+            </GroupKey>
+            <BIOS Policy="Ignore">
+                <Folder> Change this to a valid BIOS folder path. </Folder>
+                <File> Change this to a valid BIOS file path. </File>
+            </BIOS>
+        </Group>
+        <Group ID="2">
+            <GroupKey>
+                <BoardID>Valid Board ID</BoardID>
+                <CustomerID></CustomerID>
+                <BoardProduct></BoardProduct>
+                <SystemProduct></SystemProduct>
+            </GroupKey>
+            <BIOS Policy="Ignore">
+                <Folder> Change this to a valid BIOS folder path. </Folder>
+                <File> Change this to a valid BIOS file path. </File>
+            </BIOS>
+        </Group>
+    </GroupPolicy>
+
+    <IndividualPolicy>
+        <Individual ID="1">
+            <IndividualKey>
+            <!-- Individual keys to define an individual -->
+            <!-- Supported key: Address -->
+                <Address>255.255.255.255</Address>
+                <!-- Network address for the managed BMC. -->
+            </IndividualKey>
+            <BIOS Policy="Ignore">
+                <Folder> Change this to a valid BIOS folder path. </Folder>
+                <File> Change this to a valid BIOS file path. </File>
+            </BIOS>
+        </Individual>
+        <Individual ID="2">
+            <IndividualKey>
+            <Address>255.255.255.255</Address>
+            </IndividualKey>
+            <BIOS Policy="Ignore">
+                <Folder> Change this to a valid BIOS folder path. </Folder>
+                <File> Change this to a valid BIOS file path. </File>
+            </BIOS>
+        </Individual>
+    </IndividualPolicy>
+</FirmwareUpdatePolicy>

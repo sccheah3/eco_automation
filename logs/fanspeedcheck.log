@@ -1,0 +1,38 @@
+IPMI is alive
+Current Fan Reading
+  Status | (#)Sensor                |      Reading | Low Limit | High Limit |
+  OK     | (2483) FAN1              |     6300 RPM |   500 RPM |  25400 RPM |
+  OK     | (2550) FAN2              |     6200 RPM |   500 RPM |  25400 RPM |
+         | (2617) FAN3              |          N/A |   500 RPM |  25400 RPM |
+         | (2684) FAN4              |          N/A |   500 RPM |  25400 RPM |
+There are 4 fans on the motherboard, 2 fans are plugged in.
+4 fan modes are supported:
+ Standard Speed
+ Full Speed
+ PUE2 Optimal Speed
+ Heavy IO Speed
+First mode is PUE2 Optimal Speed
+Current Fan Speed Mode is [ PUE2 Optimal Speed ]
+FAN1 6200 RPM
+FAN2 6200 RPM
+Starting fan mode switch
+done
+Current Fan Speed Mode is [ Standard Speed ]
+Waiting for fans to ramp up/down to capture the correct fan speed (8s)
+FAN1 6300 RPM
+FAN2 6100 RPM
+Starting fan mode switch
+done
+Current Fan Speed Mode is [ Full Speed ]
+Waiting for fans to ramp up/down to capture the correct fan speed (8s)
+FAN1 15800 RPM
+FAN2 15700 RPM
+Starting fan mode switch
+done
+Current Fan Speed Mode is [ Heavy IO Speed ]
+Waiting for fans to ramp up/down to capture the correct fan speed (8s)
+FAN1 14400 RPM
+FAN2 14100 RPM
+Switching back to First fan mode: PUE2 Optimal Speed
+done
+Completed all the fan modes supported. Please review the captured fan speeds on fanspeedchecker file for info.

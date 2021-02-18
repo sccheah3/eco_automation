@@ -1,0 +1,2 @@
+SIOM CPU1 PCI-E 3.0 X16=01              // 00 (Disabled), *01 (Legacy), 02 (EFI)        
+SIOM CPU1 PCI-E 3.0 X8=01               // 00 (Disabled), *01 (Legacy), 02 (EFI)        

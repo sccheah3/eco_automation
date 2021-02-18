@@ -1,0 +1,2 @@
+fix fan speed check pathing to smcipmitool
+handle bios cfg editing
