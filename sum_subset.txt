@@ -34,7 +34,7 @@ D-c GetRaidControllerInfo
 D-c GetNvmeInfo (txt file)
 D-c GetSataInfo
 -c ChangeBiosCfg --file editedBiosCfg.txt --reboot
--c GetDefaultBiosCfg > defaultBiosCfg.txt (txt file)
+D-c GetDefaultBiosCfg > defaultBiosCfg.txt (txt file)
 -c LoadDefaultBiosCfg
 Cant-c SetBiosPassword --new_password 'Super123' --confirm_password 'Super123' --reboot
 

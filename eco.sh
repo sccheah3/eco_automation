@@ -84,7 +84,6 @@ TURN_SYSTEM_OFF()
 
 if [[ "$#" -eq 0 ]]; then
 	TEST_FAN=0
-	TEST_RSC=0
 	TEST_PMINFO=0
 	TEST_ONOFF=0
 	TEST_SUM=0
@@ -94,8 +93,6 @@ fi
 for arg in "$@" ; do
 	if [[ $arg == "FAN" ]]; then
 		TEST_FAN=0
-	elif [[ $arg == "RSC" ]]; then
-		TEST_RSC=0
 	elif [[ $arg == "PMINFO" ]]; then
 		TEST_PMINFO=0
 	elif [[ $arg == "SUM" ]]; then
@@ -118,14 +115,6 @@ if [[ $TEST_FAN -eq 0 ]]; then
 fi
 
 
-# need to figure out bios cfg stuff. save to temp file and cat | grep on it to save time
-if [[ $TEST_RSC -eq 0 ]]; then
-	printf "${GREEN}Testing bios card detection...${NC}\n"
-	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c getcurrentbioscfg | grep -i "rsc" | tee -a logs/riser_detection.log
-	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c getcurrentbioscfg | grep -i "aoc" | tee -a logs/riser_detection.log
-	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c getcurrentbioscfg | grep -i "siom" | tee -a logs/riser_detection.log
-fi
-
 if [[ $TEST_PMINFO -eq 0 ]]; then
 	printf "${GREEN}Testing PM INFO...${NC}\n"
 	./SMCIPMITool*/SMCIPMITool $BMC_IP $BMC_USER $BMC_PASS pminfo | tee -a logs/pm_info.log
@@ -137,7 +126,7 @@ if [[ $TEST_SUM -eq 0 ]]; then
 	SUM_TESTS=( QueryProductKey GetBIOSInfo GetBmcInfo CheckOOBSupport CheckAssetInfo \
 				CheckSystemUtilization CheckSensorData GetDmiInfo GetKcsPriv GetEventLog \
 				ClearEventLog GetEventLog GetPsuInfo GetPowerStatus GetRaidControllerInfo \
-				GetNvmeInfo GetSataInfo )
+				GetNvmeInfo GetSataInfo GetDefaultBiosCfg )
 
 	for TEST in ${SUM_TESTS[@]}; do
 		printf "${GREEN} [SUM] $TEST${NC}\n" 
@@ -188,7 +177,7 @@ if [[ $TEST_SUM -eq 0 ]]; then
 	printf "${GREEN} [SUM] SetPowerAction - UP${NC}\n" 
 	echo [SUM - SetPowerAction - UP] >> logs/sum_result.log
 	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c SetPowerAction --action 0 | tee -a logs/sum_result.log
-	sleep 30
+	sleep 45
 	POWER_STATUS="$(ipmitool -H $BMC_IP -U $BMC_USER -P $BMC_PASS chassis power status | awk '{print $4}')"
 	if [[ $POWER_STATUS == on ]]; then
 		printf "${GREEN}SUCCESS${NC} - system is on"
@@ -214,7 +203,7 @@ if [[ $TEST_SUM -eq 0 ]]; then
 	printf "${GREEN} [SUM] SetPowerAction - SOFTSHUTDOWN${NC}\n" 
 	echo [SUM - SetPowerAction - SOFTSHUTDOWN] >> logs/sum_result.log
 	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c SetPowerAction --action 4 | tee -a logs/sum_result.log
-	sleep 30
+	sleep 45
 	POWER_STATUS="$(ipmitool -H $BMC_IP -U $BMC_USER -P $BMC_PASS chassis power status | awk '{print $4}')"
 	if [[ $POWER_STATUS == off ]]; then
 		printf "${GREEN}SUCCESS${NC} - system is off"
@@ -254,8 +243,6 @@ if [[ $TEST_SUM -eq 0 ]]; then
 	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c SetPowerAction --action 3 | tee -a logs/sum_result.log
 	sleep 30
 	printf "\n\n" | tee -a logs/sum_result.log
-
-	
 
 
 fi
