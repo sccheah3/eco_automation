@@ -1,2 +1,10 @@
-fix fan speed check pathing to smcipmitool
 handle bios cfg editing
+
+# TODO:
+# set up rc for enable TAS for checksystemutilization
+# might need to do sshpass for in-band. if that's the case, then check whether debian or not and install it
+# need to clear SEL before onoff
+
+# update autopxe example: curl -X POST -F command=cburn-r79 -F address=ac:1f:6b:57:39:8c -F action=Update 172.16.0.3/cgi-bin/autopxe.php
+# enable oob example: curl -X POST -F Login=ADMIN -F Password=ADMIN -F address=172.16.190.97 -F action=Enable 172.16.0.3/cgi-bin/oob1.php
+

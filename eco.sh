@@ -1,14 +1,6 @@
 #! /bin/bash
 
-# for power shutdown, set auto and autoipxe command to boot to cburn
-# wait for boot ~8 mins, and run command
-
-# TODO: riser card detection
-# might need to do sshpass for in-band. if that's the case, then check whether debian or not and install it
-# need to clear SEL before onoff
-
-# update autopxe example: curl -X POST -F command=cburn-r79 -F address=ac:1f:6b:57:39:8c -F action=Update 172.16.0.3/cgi-bin/autopxe.php
-# enable oob example: curl -X POST -F Login=ADMIN -F Password=ADMIN -F address=172.16.190.97 -F action=Enable 172.16.0.3/cgi-bin/oob1.php
+HOST_SERV="172.16.219.209"
 
 GREEN='\033[0;32m'
 RED='\033[0;31m'
@@ -124,7 +116,7 @@ if [[ $TEST_SUM -eq 0 ]]; then
 	printf "${GREEN} Testing SUM...${NC}\n"
 
 	SUM_TESTS=( QueryProductKey GetBIOSInfo GetBmcInfo CheckOOBSupport CheckAssetInfo \
-				CheckSystemUtilization CheckSensorData GetDmiInfo GetKcsPriv GetEventLog \
+				CheckSensorData GetDmiInfo GetKcsPriv GetEventLog \
 				ClearEventLog GetEventLog GetPsuInfo GetPowerStatus GetRaidControllerInfo \
 				GetNvmeInfo GetSataInfo GetDefaultBiosCfg )
 
@@ -134,6 +126,24 @@ if [[ $TEST_SUM -eq 0 ]]; then
 		./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c $TEST | tee -a logs/sum_result.log
 		printf "\n\n" | tee -a logs/sum_result.log
 	done
+
+
+	TURN_SYSTEM_OFF
+	TURN_SYSTEM_ON
+
+	# set both autopxe and autoipxe commands
+	printf "${GREEN}Setting iPXE/PXE command to boot to cburn...${NC}\n\n"
+	curl -X POST -F command="$CBURN_IMG RC=$HOST_SERV/eco_automate/cburn_TAS_install.sh" -F address=$LAN_MAC -F action=Update -F lega_only=LEGA 172.16.0.3/dct/cburnTools/httpIPXE | tail -n 20
+	curl -X POST -F command="$CBURN_IMG RC=$HOST_SERV/eco_automate/cburn_TAS_install.sh" -F address=$LAN_MAC -F action=Update -F ipxe_only=IPXE 172.16.0.3/dct/cburnTools/httpIPXE | tail -n 20 
+
+	printf "${GREEN}Waiting 9 mins to fully boot into cburn and install TAS for CheckSystemUtilization...${NC}\n\n"
+	sleep 540
+
+	printf "${GREEN} [SUM] CheckSystemUtilization${NC}\n" 
+	echo [SUM - CheckSystemUtilization] >> logs/sum_result.log
+	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c CheckSystemUtilization | tee -a logs/sum_result.log
+	echo "If you hit an error here, install Thin Agent Service (TAS) on cburn and run the sum command manually." | tee -a logs/sum_result.log
+	printf "\n\n" | tee -a logs/sum_result.log
 
 	printf "${GREEN} [SUM] GetMaintenEventLog${NC}\n" 
 	echo [SUM - GetMaintenEventLog] >> logs/sum_result.log
