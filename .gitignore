@@ -1,3 +1,4 @@
 bios/*
 ipmi/*
+temp/*
 .DS_Store

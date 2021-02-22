@@ -1,0 +1,32 @@
+[SUM - LoadDefaultBiosCfg]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+......[0m
+[0m[1m[1m[1mStatus:[0m[0m [0mThe default BIOS configuration is loaded for 172.16.190.97
+
+[0m[1m[1m[1mNote:[0m[0m [0mYou have to reboot or power up the system for the changes to take effect
+
+[SUCCESS - system set to OFF state]
+[SUCCESS - system set to ON state]
+296,297c296,297
+< Legacy Boot Order #1=0006               // *0000 (Hard Disk), 0001 (CD/DVD), 0002 (USB Hard Disk), 0003 (USB CD/DVD), 0004 (USB Key), 0005 (USB Floppy), 0006 (Network), 0007 (Disabled)        Boot Mode Select = "LEGACY"
+< Legacy Boot Order #2=0000               // 0000 (Hard Disk), *0001 (CD/DVD), 0002 (USB Hard Disk), 0003 (USB CD/DVD), 0004 (USB Key), 0005 (USB Floppy), 0006 (Network), 0007 (Disabled)        Boot Mode Select = "LEGACY"
+---
+> Legacy Boot Order #1=0000               // *0000 (Hard Disk), 0001 (CD/DVD), 0002 (USB Hard Disk), 0003 (USB CD/DVD), 0004 (USB Key), 0005 (USB Floppy), 0006 (Network), 0007 (Disabled)        Boot Mode Select = "LEGACY"
+> Legacy Boot Order #2=0006               // 0000 (Hard Disk), *0001 (CD/DVD), 0002 (USB Hard Disk), 0003 (USB CD/DVD), 0004 (USB Key), 0005 (USB Floppy), 0006 (Network), 0007 (Disabled)        Boot Mode Select = "LEGACY"
+[SUCCESS - loaded default bios]
+
+
+[SUM - LoadDefaultBiosCfg]
+Supermicro Update Manager (for UEFI BIOS) 2.5.1-p2 (2021/01/15) (x86_64)
+Copyright(C) 2013-2021 Super Micro Computer, Inc. All rights reserved.
+.......[0m
+[0m[1m[1m[1mStatus:[0m[0m [0mThe default BIOS configuration is loaded for 172.16.190.97
+
+[0m[1m[1m[1mNote:[0m[0m [0mYou have to reboot or power up the system for the changes to take effect
+
+[SUCCESS - system set to OFF state]
+[SUCCESS - system set to ON state]
+[SUCCESS - loaded default bios]
+
+

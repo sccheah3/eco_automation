@@ -1,7 +1,9 @@
-handle bios cfg editing
-
 # TODO:
-# set up rc for enable TAS for checksystemutilization
+handle bios cfg editing
+changebioscfg, loaddefaultbioscfg, getdefaultbioscfg
+-save current config and default cfg into temp, then loaddefaultbioscfg and compare to defaultbios cfg file when get current cfg, create an edited file off defaultcfg and then changebioscfg, then compare. At the end, changebioscfg to original currentcfg
+
+
 # might need to do sshpass for in-band. if that's the case, then check whether debian or not and install it
 # need to clear SEL before onoff
 

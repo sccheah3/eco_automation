@@ -99,3 +99,6 @@
 2021-02-19_10:58:19    sccheah    ./sum -i 172.16.130.241 -u ***** -p ***** -c checksystemutilization
 2021-02-19_11:43:37    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checksystemutilization
 2021-02-19_16:37:24    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c checksystemutilization
+2021-02-22_09:43:41    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-22_10:56:22    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentbiosCfg
+2021-02-22_10:59:05    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentbiosCfg
