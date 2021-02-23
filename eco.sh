@@ -255,13 +255,14 @@ if [[ $TEST_SUM -eq 0 ]]; then
 
 
 	printf "${GREEN}[SUM] GetCurrentBiosCfg${NC}\n" 
-	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c GetCurrentBiosCfg | tee temp/currentbioscfg.log 
+	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c GetCurrentBiosCfg --file temp/currentbioscfg.log --overwrite
 	printf "\n\n"
 
 	printf "${GREEN}[SUM] GetDefaultBiosCfg${NC}\n" 
-	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c GetDefaultBiosCfg | tee temp/defaultbioscfg.log
+	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c GetDefaultBiosCfg --file temp/defaultbioscfg.log --overwrite
 	printf "\n\n"
 
+	####################### Test for load default bios cfg ######################################
 	printf "${GREEN}[SUM] LoadDefaultBiosCfg${NC}\n" 
 	echo [SUM - LoadDefaultBiosCfg] >> logs/sum_result.log
 	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c LoadDefaultBiosCfg | tee -a logs/sum_result.log 
@@ -270,27 +271,23 @@ if [[ $TEST_SUM -eq 0 ]]; then
 	sleep 360
 
 	printf "${GREEN}[SUM] GetCurrentBiosCfg${NC}\n" 
-	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c GetCurrentBiosCfg | tee temp/loadeddefaultbioscfg.log
+	./sum*/sum -i $BMC_IP -u $BMC_USER -p $BMC_PASS -c GetCurrentBiosCfg --file temp/loadeddefaultbioscfg.log --overwrite
 	printf "\n\n"
 
 	# have to output it to a separate file because if we try to put it back to temp/loadeddefaultbioscfg.log, it will be blank
-	tail temp/loadeddefaultbioscfg.log -n $(( $( cat temp/loadeddefaultbioscfg.log | wc -l ) - 7 )) | tee temp/loadeddefaultbioscfg_diff.log
-	tail temp/defaultbioscfg.log -n $(( $( cat temp/defaultbioscfg.log | wc -l ) - 7 )) | tee temp/defaultbioscfg_diff.log
+	tail temp/loadeddefaultbioscfg.log -n $(( $( cat temp/loadeddefaultbioscfg.log | wc -l ) - 4 )) | tee temp/loadeddefaultbioscfg_diff.log
+	tail temp/defaultbioscfg.log -n $(( $( cat temp/defaultbioscfg.log | wc -l ) - 4 )) | tee temp/defaultbioscfg_diff.log
 	
 	diff temp/loadeddefaultbioscfg_diff.log temp/defaultbioscfg_diff.log
-	if [ $? -eq 0 ]; then
+	if [[ $? -eq 0 ]]; then
 		printf "[${GREEN}SUCCESS${NC} - loaded default bios]\n\n"
 		echo "[SUCCESS - loaded default bios]" >> logs/sum_result.log
 	else
 		printf "[${RED}ERROR${NC} - unable to load default bios]\n\n"
-		echo "[ERROR - unable to load default bios]" | tee -a logs/sum_result.log
+		echo "[ERROR - unable to load default bios]" >> logs/sum_result.log
 	fi
 
 	printf "\n\n" | tee -a logs/sum_result.log
-
-	#tail temp/currentbioscfg.log -n $(( $( cat temp/currentbioscfg.log | wc -l ) - 7 )) | tee temp/currentbioscfg.log #> temp/currentbioscfg.log
-	# tail temp/defaultbioscfg.log -n $(( $(cat temp/defaultbioscfg.log | wc -l) - 7 )) | tee temp/defaultbioscfg.log #> temp/defaultbioscfg.log
-	# tail temp/loadeddefaultbioscfg.log -n $(( $(cat temp/loadeddefaultbioscfg.log | wc -l) - 7 )) | tee temp/loadeddefaultbioscfg.log #> temp/loadeddefaultbioscfg.log
-
+	###############################################################################################
 
 fi

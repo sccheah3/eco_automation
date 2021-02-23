@@ -57,3 +57,15 @@
 2021-02-22_14:44:28    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetDefaultBiosCfg
 2021-02-22_14:44:32    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c LoadDefaultBiosCfg
 2021-02-22_14:50:41    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg
+2021-02-22_15:01:08    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg
+2021-02-22_15:01:16    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetDefaultBiosCfg
+2021-02-22_15:01:20    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c LoadDefaultBiosCfg
+2021-02-22_15:08:26    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg
+2021-02-22_15:37:00    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg
+2021-02-22_15:37:06    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetDefaultBiosCfg
+2021-02-22_15:37:10    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c LoadDefaultBiosCfg
+2021-02-22_15:44:16    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg
+2021-02-22_16:35:43    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg --file temp/currentbioscfg.log --overwrite 
+2021-02-22_16:35:49    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetDefaultBiosCfg --file temp/defaultbioscfg.log --overwrite 
+2021-02-22_16:35:53    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c LoadDefaultBiosCfg
+2021-02-22_16:42:59    sccheah    ./sum_2.5.1-p2_Linux_x86_64/sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentBiosCfg --file temp/loadeddefaultbioscfg.log --overwrite 

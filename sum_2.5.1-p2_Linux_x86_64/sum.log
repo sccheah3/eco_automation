@@ -102,3 +102,16 @@
 2021-02-22_09:43:41    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
 2021-02-22_10:56:22    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentbiosCfg
 2021-02-22_10:59:05    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c GetCurrentbiosCfg
+2021-02-22_15:58:40    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file loadeddefaultbioscfg.log
+2021-02-22_15:59:44    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file defaultbioscfg.log
+2021-02-22_16:01:14    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg
+2021-02-22_16:01:21    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file defaultbioscfg.log
+2021-02-22_16:10:19    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-22_16:11:11    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file currentbioscfg.log
+2021-02-22_16:18:48    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getcurrentbioscfg
+2021-02-22_16:19:36    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file currentbioscfg.log
+2021-02-22_16:20:19    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbmccfg
+2021-02-22_16:20:44    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebmccfg --file bmccfg.log
+2021-02-22_16:23:45    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg --file defaultbioscfg.txt
+2021-02-22_16:24:49    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file defaultbioscfg.txt
+2021-02-22_16:50:29    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file currentbioscfg.log --reboot 
