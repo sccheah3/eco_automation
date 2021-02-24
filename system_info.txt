@@ -1,6 +1,6 @@
-172.16.190.97
-ADMIN
-ADMIN
-ac:1f:6b:57:39:8c
+172.16.182.140
+root
+root
+ac:1f:6b:d8:5b:b2
 cburn-r79
 ONOFF=300 MDELT=1024 NASNSR OFFT=60 DIR=oem/stanleyc/eco_automate

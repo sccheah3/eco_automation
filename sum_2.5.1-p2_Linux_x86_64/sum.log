@@ -115,3 +115,27 @@
 2021-02-22_16:23:45    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg --file defaultbioscfg.txt
 2021-02-22_16:24:49    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file defaultbioscfg.txt
 2021-02-22_16:50:29    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c changebioscfg --file currentbioscfg.log --reboot 
+2021-02-23_14:09:54    sccheah    ./sum -c setpoweraction
+2021-02-23_14:10:01    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setpoweraction --action 4
+2021-02-23_14:10:19    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setpoweraction --action 4
+2021-02-23_14:21:04    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c checksystemutilization
+2021-02-23_14:21:46    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setpoweraction --action 4
+2021-02-23_14:23:51    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c loaddefaultbioscfg
+2021-02-23_14:33:16    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getdefaultbioscfg
+2021-02-23_14:33:23    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getdefaultbioscfg --file bios.cfg
+2021-02-23_14:35:46    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c changebioscfg --file bios.cfg
+2021-02-23_14:38:27    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c changebioscfg --file bios.cfg
+2021-02-23_14:44:52    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c changebioscfg --file bios.cfg
+2021-02-23_14:52:54    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbiospassword --new_password ***** --confirm_password ***** --reboot 
+2021-02-23_14:58:49    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbiospassword --new_password ***** --confirm_password ***** --reboot 
+2021-02-23_15:09:16    sccheah    ./sum -c updatebios
+2021-02-23_15:11:35    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c updatebios --file ../bios/downgrade_EBAY_H12SST_20201110_1_1_1_3.ROM --reboot 
+2021-02-23_15:32:17    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c updatebios --file ../bios/upgarde_EBAY_H12SST_20210219_1_1_1_4.ROM --reboot 
+2021-02-23_15:35:55    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getdefaultbioscfg --file netapp_bios.cfg
+2021-02-23_15:42:10    sccheah    ./sum -i 172.16.190.97 -u ***** -p ***** -c getbmccfg
+2021-02-23_15:42:37    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getbmccfg
+2021-02-23_15:49:59    sccheah    ./sum -c getcurrentbioscfg
+2021-02-23_15:50:07    sccheah    ./sum -h  -c getcurrentbioscfg
+2021-02-23_15:54:52    sccheah    ./sum -h  -c getdefaultbioscfg
+2021-02-23_15:54:57    sccheah    ./sum -h  -c getdefaultbioscfg
+2021-02-23_15:59:09    sccheah    ./sum -i 172.16.2.1 -u ***** -p ***** -c getdefaultbioscfg

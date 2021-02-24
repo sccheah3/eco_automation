@@ -1,7 +1,8 @@
 # TODO:
+for changebioscfg/etc assume xml format. need to first, loaddefaultcfg, then changebioscfg, then compare, then loaddefaultcfg, then compare with original 
 handle bios cfg editing
-changebioscfg, loaddefaultbioscfg, getdefaultbioscfg
--save current config and default cfg into temp, then loaddefaultbioscfg and compare to defaultbios cfg file when get current cfg, create an edited file off defaultcfg and then changebioscfg, then compare. At the end, changebioscfg to original currentcfg
+changebioscfg
+-create an edited file off defaultcfg and then changebioscfg, then compare. At the end, changebioscfg to original currentcfg
 
 
 # might need to do sshpass for in-band. if that's the case, then check whether debian or not and install it
