@@ -1,0 +1,164 @@
+=====================================================================
+SUM Command List Updated 1/15/21
+===================================================================== 
+Must Test OOB + InBand
+===================================================================== 
+
+
+===================================================================== 
+Supermicro Update Manager (for UEFI BIOS) x.x.x (2021/01/01) (x86_64)
+=====================================================================
+System Name | SYS-220U-MTNR 
+Upgrade BIOS: 12/17/2020
+Downgrade BIOS: 12/04/2020
+Upgrade IPMI: 0.10.79
+Downgrade IPMI: 0.10.77
+=====================================================================
+Key Management 
+=====================================================================
+D-c QueryProductKey
+-c ActivateProductKey --key_file AC1F6B3F9492.dcms.key
+=====================================================================
+System Checks
+=====================================================================
+D-c CheckOOBSupport
+D-c CheckAssetInfo --file x.txt 
+D-c CheckSystemUtilization 
+   For this to output properly, need to install SFT-SMCI-TAS (Thin-Agent Service) in cburn, then run command OOB support only. 
+   Find the latest version on PB by searching "Thin Agent Service" under Project Name.
+D-c CheckSensorData (save to txt file)
+=====================================================================
+BIOS Management 
+=====================================================================
+D-c GetBIOSInfo
+D-c UpdateBios --file upgrade_bios.bin [--flash_smbios] [--reboot]
+D-c UpdateBios --file downgradebios.bin [--flash_smbios] [--reboot]
+D-c GetDefaultBiosCfg --file defaultbios.txt [--overwrite]
+D-c GetCurrentBiosCfg --file currbios.txt
+-c ChangeBiosCfg --file editedbios.txt [--reboot]
+-c LoadDefaultBiosCfg [--reboot]
+NA-c SetBiosPassword --new_password Super123 --confirm_password Super123 [--reboot]
+D-c GetDmiInfo --file x.txt 
+D-c BiosRotManage --action 1 [--reboot]  
+   <action>
+          1 = GetInfo 
+          2 = UpdateGolden [optional]
+          3 = Recover [optional]
+=====================================================================
+BMC Management 
+=====================================================================
+D-c GetBmcInfo 
+D-c UpdateBmc --file upgrade_bmc.bin --overwrite_cfg --overwrite_sdr
+D-c UpdateBmc --file downgradebmc.bin --overwrite_cfg --overwrite_sdr
+D-c GetBmcCfg --file x.txt 
++-c SetBmcPassword --user_id 3 --new_password 98765432
+   Notice
+       1. If password includes special character(s), it has to be quoted.
+       2. Without --user_id, the user ID is set to 2 (the default Administrator)
+D-c GetKcsPriv
+-c SetKcsPriv --priv_level 2
+   <KCS Privilege level>
+          1 = Call Back
+          2 = User
+          3 = Operator
+          4 = Administrator
+-c LoadDefaultBmcCfg
+D-c BmcRotManage --action 1  
+   <action>
+          1 = GetInfo
+          2 = UpdateGolden [optional]
+          3 = Recover [optional]
+   Notice
+       1. Support only on RoT system of X12 and later platforms.
+       2. UpdateGolden action will overwrite golden image with current BMC firmware.
+=====================================================================
+System Event Log 
+=====================================================================          
+D-c GetEventLog --file x.txt
+D-c ClearEventLog 
+D-c GetMaintenEventLog --st 20201228 --et 20201231 --file x.txt [--count 5]
+   --st    <start time>
+          Enters the start time YYYYMMDD.
+   --et    <end time>
+          Enters the end time YYYYMMDD.
+=====================================================================
+CMM Management [SKIP]
+=====================================================================
+Storage Management     
+=====================================================================    
+D-c GetRaidControllerInfo [--file] [--dev_id 0]
+D-c GetSataInfo --file x.txt
+D-c GetNvmeInfo 
+=====================================================================
+PSU Management      
+=====================================================================       
+D-c GetPsuInfo
+D-c GetPowerStatus
+D-c SetPowerAction --action <0/up>
+   <action>
+          0 = up
+          1 = down
+          2 = cycle
+          3 = reset
+          4 = softshutdown
+          5 = reboot
+=====================================================================
+Applications   
+=====================================================================            
+-c MountIsoImage --image_url <URL>
+-c UnmountIsoImage
+-c RawCommand --raw '06 01'
+=====================================================================
+TPM Management             
+=====================================================================
+D-c GetTpmInfo
+=====================================================================
+GPU Management  
+=====================================================================           
+D-c GetGpuInfo
+=====================================================================
+[Optional - if time permits] 
+-c ChangeDmiInfo 
+-c EditDmiInfo 
+-c ChangeBmcCfg
+-c GetLockdownMode
+-c SetLockdownMode --lock <yes/no> [--reboot]
+-c UpdateRaidController
+-c GetRaidCfg
+-c ChangeRaidCfg
+-c SecureEraseRaidHdd
+-c SecureEraseDisk
+-c MountFloppyImage
+-c UnmountFloppyImage
+-c GetUsbAccessMode
+-c SetUsbAccessMode
+[/Optional - if time permits] 
+=====================================================================
+
+
+********************************************************************************
+FOR INBAND ISSUE:
+********************************<<<<<ERROR>>>>>*********************************
+
+ExitCode                = 38
+Description             = Function is not supported
+Program Error Code      = 409.21
+Error message:
+        The Redfish Host Interface is not available.
+
+********************************************************************************
+Solution (from Kage): 
+Need kernel module for the Redfish_HI
+# lsmod | grep rndis_host
+if you found this kernel module then run
+# ifconfig
+11:32
+to see a new eth or eno device with some different IP address. If you do not have this module, run
+# modprobe -r rndis_host
+# modprobe -i rndis_host
+# lsmod | grep rndis_host
+
+If found then run 
+# ifconfig
+and if see some different IP then you can run the INB running.
+********************************************************************************

@@ -139,3 +139,25 @@
 2021-02-23_15:54:52    sccheah    ./sum -h  -c getdefaultbioscfg
 2021-02-23_15:54:57    sccheah    ./sum -h  -c getdefaultbioscfg
 2021-02-23_15:59:09    sccheah    ./sum -i 172.16.2.1 -u ***** -p ***** -c getdefaultbioscfg
+2021-03-01_11:41:26    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getcurrentbioscfg --file currentbioscfg.txt
+2021-03-01_11:43:38    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getdefaultbioscfg --file defaultbioscfg.txt
+2021-03-01_11:44:08    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c loaddefaultbioscfg
+2021-03-01_11:51:08    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getcurrentbioscfg --file loadeddefaultbioscfg.txt
+2021-03-03_14:24:16    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c loaddefaultbioscfg --reboot 
+2021-03-03_14:53:03    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getcurrentbioscfg --file changebioscfg.txt
+2021-03-04_15:53:59    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getbiosinfo
+2021-03-04_15:54:08    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getbmcinfo
+2021-03-04_16:36:36    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password *****
+2021-03-04_16:37:44    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password *****
+2021-03-04_16:38:15    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password *****
+2021-03-04_17:33:07    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password *****
+2021-03-04_17:39:20    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password *****
+2021-03-04_17:39:27    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword
+2021-03-04_17:39:43    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword
+2021-03-04_17:40:39    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password ***** --confirm_password *****
+2021-03-04_17:50:07    sccheah    ./sum -i 172.16.210.75 -u ***** -p ***** -c setbmcpassword --user_id 3 --new_password *****
+2021-03-04_17:56:01    sccheah    ./sum -i 172.16.210.75 -u ***** -p ***** -c setbmcpassword --user_id 2 --new_password *****
+2021-03-05_15:40:11    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getbmccfg --file bmccfg.txt
+2021-03-05_16:19:07    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c getbmccfg --file bmccfg.txt
+2021-03-05_16:23:01    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c updatebmc --file ../ipmi/upgrade_eBay_H12SST_PS_V613_0_12182020_Dedicate.bin --overwrite_cfg  --overwrite_sdr 
+2021-03-05_16:29:50    sccheah    ./sum -i 172.16.182.140 -u ***** -p ***** -c updatebmc --file ../ipmi/upgrade_eBay_H12SST_PS_V613_0_12182020_Dedicate.bin --overwrite_cfg  --overwrite_sdr 
